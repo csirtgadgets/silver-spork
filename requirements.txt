@@ -1,0 +1,19 @@
+csirtg_indicator>=0.0.0b25,<1.0
+numpy>=1.14,<1.15
+scikit-learn>=0.19,<0.20
+scipy>=1.0,<1.1
+editdistance>=0.3,<1.0
+
+# testing only
+#https://github.com/csirtgadgets/csirtg-urlsml-py/archive/master.zip
+#https://github.com/csirtgadgets/csirtg-domainsml-py/archive/master.zip
+#https://github.com/csirtgadgets/csirtg-mail-py/archive/master.zip
+
+csirtg-domainsml
+csirtg_urlsml
+csirtg_ipsml
+csirtg_mail>=0.0.0a12
+
+Flask>=0.12.2,<0.13
+flask-restplus>=0.9.2,<1.0
+

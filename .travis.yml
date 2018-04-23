@@ -1,0 +1,30 @@
+sudo: required
+dist: trusty
+language: python
+cache:
+  - pip
+  - apt
+
+python:
+  - 3.6
+
+install:
+  - pip install -r dev_requirements.txt
+
+script:
+  - python setup.py test
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+
+deploy:
+  provider: pypi
+  user: wesyoung
+  password:
+    secure: Yz1AR6EjSX8QLq1EFhQEBXmCXotGxtvztHrzGDZ40ohG+BgahChmKamWjQ3f38koVktu3+slO8ghyN/BLL1IVsZfag2KNSqjIMm7ckO0mF0S1XyOlMX1bHlP7vZMX2KG7fiJG/Fdwro8+1nLwpMgg4wfK7YSTipR5jfzgLZLJ5i0GAILmuQVzf6lrKRGFwBo3HW1cv/H54bSLUNMXXCqrJG7uVHTxrVinQ0Mpc/913az410KP8Q7Jy6tJO8Rb5wON3jarwASEHum9t7v9SgBwUGIMRag0egaM6zbQHdYGyw9gx60mlwUh4GsvIdp5cS+FAi0mclpYFSANcTl/jaaN0ToylN1WqSZQ1HMRUF5P6eGjyOJvRsICUFXS3jepsFZBlTsvRyfeUrB01AAQupi1z9Pberv+gGA1BtwBmOWXEN9zW5KcBSDb6UyHqJ1hANZjzfGW7GkDr6Q6Vi+GLHHlyOnkUgo+KOy0Rx1NUHiNlf9lUG8NZVwu9KFW8W+TUVHHx1JeQrlN7UNTIWWPIkg5J71CuK8pmunxMzDg6TK4KeLFcT9QQhhl+/5zawjBx21d7Q5NdQg39a0CW6Q7/7EMbi2naFDJ3o8obtQEL8zl1+S9YDkF9nrRKKrSYXhSFgffjLK9iDUexyIpgHY5uwRu6q3NAGDdHiKCo/2M9/EqOQ=
+  on:
+    branch: master
+    tags: true
+    condition: $TRAVIS_PYTHON_VERSION = "3.6"

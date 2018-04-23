@@ -1,0 +1,10 @@
+include versioneer.py
+include csirtg_predict_api/_version.py
+include data/whitelist.txt
+include README.md
+include MANIFEST.in
+include requirements.txt dev_requirements.txt
+include test
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+include csirtg_predict_api/_version.py
