@@ -16,8 +16,12 @@ $ csirtg-predictd -d --fdebug
 ```
 
 # Testing
-# navigate to http://localhost:5000 or..
+Navigate to http://localhost:5000
 
+![](https://user-images.githubusercontent.com/474878/39194869-95eed9e6-47ac-11e8-85b2-b7ee373fd55e.png?raw=true)
+
+Or use curl
+```
 $ curl localhost:5000/domain/?q=google.com
 {
     "data": "0"
@@ -39,6 +43,6 @@ $ curl localhost:5000/ip/?q=122.2.223.242,6  # ip, hour of day observed [optiona
 }
 ```
 
-# Next steps
+# Deploying in Production
 
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04
