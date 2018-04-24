@@ -9,10 +9,10 @@ editdistance>=0.3,<1.0
 #https://github.com/csirtgadgets/csirtg-domainsml-py/archive/master.zip
 #https://github.com/csirtgadgets/csirtg-mail-py/archive/master.zip
 
-csirtg-domainsml
-csirtg_urlsml
-csirtg_ipsml
-csirtg_mail>=0.0.0a12
+csirtg-domainsml>=0.0.0a5,<1.0
+csirtg_urlsml>=0.0.0a4,<1.0
+csirtg_ipsml>=0.0.0a2,<1.0
+csirtg_mail>=0.0.0a12,<1.0
 
 Flask>=0.12.2,<0.13
 flask-restplus>=0.9.2,<1.0
