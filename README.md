@@ -4,6 +4,7 @@ the FASTEST way to deploy a REST prediction API
 # Getting Started
 ```bash
 $ sudo [apt-get|brew|yum] install geoipupdate  # ubuntu16 or later, requires python3
+$ sudo cp GeoIP.conf /etc/GeoIP.conf
 $ sudo geoipupdate -v
 $ easy_install distribute
 $ pip install -r dev_requirements.txt
