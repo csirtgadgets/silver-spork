@@ -2,7 +2,7 @@
 the FASTEST way to deploy a REST prediction API
 
 ```bash
-$ sudo [apt-get|brew|yum] install geoipupdate
+$ sudo [apt-get|brew|yum] install geoipupdate  # ubuntu16 or later, requires python3
 $ pip install -r dev_requirements.txt
 $ python setup.py develop
 $ csirtg_predictd -d --fdebug
