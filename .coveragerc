@@ -27,10 +27,10 @@ omit =
     csirtg_predict_api/_version.py
     csirtg_predict_api/constants.py
     csirtg_predict_api/__init__.py
-    csirtg_predict_api/domain.py
-    csirtg_predict_api/email.py
-    csirtg_predict_api/ip.py
-    csirtg_predict_api/url.py
+    #csirtg_predict_api/domain.py
+    #csirtg_predict_api/email.py
+    #csirtg_predict_api/ip.py
+    #csirtg_predict_api/url.py
     csirtg_predict_api/whitelist.py
 
 [html]
