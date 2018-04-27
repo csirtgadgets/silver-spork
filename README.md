@@ -15,8 +15,8 @@ $ sudo [apt-get|brew|yum] install geoipupdate  # ubuntu16 or later, requires pyt
 $ sudo cp GeoIP.conf /etc/GeoIP.conf
 $ sudo geoipupdate -v
 $ easy_install distribute
-$ pip install -r dev_requirements.txt
-$ python setup.py develop
+$ pip3 install -r dev_requirements.txt
+$ python3 setup.py develop
 $ csirtg-predictd -d --fdebug
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
