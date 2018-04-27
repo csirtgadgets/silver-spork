@@ -2,6 +2,14 @@
 the FASTEST way to deploy a REST prediction API
 
 # Getting Started
+## The Docker Way
+
+```bash
+$ docker run -p 5000:5000 csirtgadgets/csirtg-predictd:latest
+```
+
+## The Manual Way
+
 ```bash
 $ sudo [apt-get|brew|yum] install geoipupdate  # ubuntu16 or later, requires python3
 $ sudo cp GeoIP.conf /etc/GeoIP.conf
